@@ -29,7 +29,7 @@ This game is meant for entertainment purposes only and should not be taken serio
 
 ## Author
 
-- [Your Name]
+- [izake]
 
 ## Version
 
