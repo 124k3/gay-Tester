@@ -1,6 +1,6 @@
 # GayTester
 
-Welcome to **GayTester**! This is a simple and humorous game created as a means of learning GUI (Graphical User Interface) in Java. The game asks a series of funny questions to determine a "gay level" based on user responses.
+Welcome to **GayTester**! This is a simple and humorous game created using java inbuild GUI (Graphical User Interface) library (javafx.swing). The game asks a series of funny questions to determine a "gay level" based on user responses.
 
 ## How to Play
 
