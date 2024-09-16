@@ -15,7 +15,6 @@ public class GameUI
 {
     private static String GAME_TITLE = "Gay Tester!";
 
-    // --------------------------constructor(s)
 
     public GameUI() 
     {
@@ -23,7 +22,6 @@ public class GameUI
     }
 
     // --------------------------method(s)
-
     /**
      * create(s) the parent window using the JFrame.
      *
@@ -72,10 +70,7 @@ public class GameUI
     {
         // parentComp, object, title, optionType
         JOptionPane.showConfirmDialog(
-                frame,
-                reply, 
-                GAME_TITLE,
-                2);
+                frame, reply, GAME_TITLE, 2);
     }
 
     /**
@@ -84,7 +79,7 @@ public class GameUI
      * @param frame the parent window on to which the game renders.
      * @param optionType {@code 1} - yes,no option buttons, 
      * {@code 2} - yes, no, cancel option buttons avalable.
-     * 
+     * @return index int value 1, 2 or 3. depending on the button clicked. 
      *
      **/
     public int askQuestion(String question, JFrame frame, int optionType)
@@ -100,27 +95,21 @@ public class GameUI
      *
      *
      *
-     *
      */
-    public void printDialogue()
-    {}
-
-    /**
-     *
-     *
-     *
-     *
-     *
-     */
-    public String takeInput(
+    public String takeStringInput(
             JFrame frame, String question, int optionType)
     {
         return JOptionPane.shwoInputDialog(
-                frame,
-                question,
-                GAME_TILE,
-                optionType);
+                frame, question, GAME_TILE, optionType);
 
+    }
+
+    /***/
+    public void printConformDialog(
+            JFrame frame, String message, int optionType)
+    {
+        JOptionPane.shwoMessageDialog(
+                frame, message, GAME_TITLE, optionType);
     }
 
 }
