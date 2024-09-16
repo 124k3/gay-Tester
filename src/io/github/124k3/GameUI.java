@@ -13,6 +13,7 @@ import javax.swing.JOptionPane;
  */
 public class GameUI 
 {
+    private static String GAME_TITLE = "Gay Tester!";
 
     // --------------------------constructor(s)
 
@@ -70,7 +71,11 @@ public class GameUI
     public void setGameReply(String reply, JFrame frame) 
     {
         // parentComp, object, title, optionType
-        JOptionPane.showConfirmDialog(frame, reply, "Gay Tester!", 2);
+        JOptionPane.showConfirmDialog(
+                frame,
+                reply, 
+                GAME_TITLE,
+                2);
     }
 
     /**
@@ -85,7 +90,36 @@ public class GameUI
     public int askQuestion(String question, JFrame frame, int optionType)
     {
         return (JOptionPane.showInternalConfirmDialog(
-                    frame, question, "Gay Tester!", optionType));
+                    frame, question, GAME_TITLE, optionType));
+
+    }
+
+    /**
+     *
+     *
+     *
+     *
+     *
+     *
+     */
+    public void printDialogue()
+    {}
+
+    /**
+     *
+     *
+     *
+     *
+     *
+     */
+    public String takeInput(
+            JFrame frame, String question, int optionType)
+    {
+        return JOptionPane.shwoInputDialog(
+                frame,
+                question,
+                GAME_TILE,
+                optionType);
 
     }
 
