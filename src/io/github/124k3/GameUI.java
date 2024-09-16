@@ -36,6 +36,11 @@ public class GameUI {
 
     }
 
+    /**
+     * Ceteres the frame i.e the Window.
+     * @param frame JFrame object
+     *
+     **/
     private static void centerWindow(JFrame frame)
     {
         // get screen size
