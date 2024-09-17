@@ -88,7 +88,8 @@ public class GameUI {
     }
 
     /**
-     * presents an input box to obtain data (in the form ) of string from the user.
+     * presents an input box to obtain data (in the form)
+     * of string from the user.
      * @param frame the parent window created via JFrame
      * @param question the string message to be shown to the user.
      * @param optionType 1,2,3,4 changes the icon of the prompt.
@@ -108,7 +109,8 @@ public class GameUI {
     }
 
     /**
-     * provided a conformation dialog box with yes_no, yes_cancel, yes_no_cancel
+     * provided a conformation dialog box with yes_no, 
+     * yes_cancel, yes_no_cancel
      * buttons and a message for the user.
      * @param frame the JFrame object.
      * @param message the message string which the user sees.
