@@ -90,6 +90,9 @@ public class GameUI
         return (JOptionPane.showInternalConfirmDialog(
                     frame, question, GAME_TITLE, optionType));
 
+
+
+
     /**
      * presents an input box to obtain data (in the form)
      * of string from the user.
@@ -111,8 +114,11 @@ public class GameUI
         );
     }
 
+
+
+
+
     /**
-<<<<<<< HEAD
      * provided a conformation dialog box with yes_no, 
      * yes_cancel, yes_no_cancel
      * buttons and a message for the user.
@@ -120,27 +126,33 @@ public class GameUI
      * @param message the message string which the user sees.
      * @param optionType integer value which allows the selection of buttons.
      **/
-=======
-     *
-     *
-     *
-     *
-     *
-     */
     public String takeStringInput(
             JFrame frame, String question, int optionType)
     {
-        return JOptionPane.shwoInputDialog(
+        return JOptionPane.showInputDialog(
                 frame, question, GAME_TILE, optionType);
 
     }
 
-    /***/
->>>>>>> origin/forUi
+
+
+    
+
+    /**
+     * provied a message dialogue which could be used for asking
+     * questions.
+     * 
+     * the message variation can be achieved by the option type
+     * the message could be error, infomation, etc.
+     * @param frame the JFrame object
+     * @param message the string message, which the user see(s).
+     * @param optionType the integer value to select the message icon type.
+     *
+     **/
     public void printConformDialog(
             JFrame frame, String message, int optionType)
     {
-        JOptionPane.shwoMessageDialog(
+        JOptionPane.showMessageDialog(
                 frame, message, GAME_TITLE, optionType);
     }
 
