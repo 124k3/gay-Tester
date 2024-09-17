@@ -11,6 +11,7 @@ import javax.swing.JOptionPane;
  * @author 124k3
  *
  */
+
 public class GameUI 
 {
     private static String GAME_TITLE = "Gay Tester!";
@@ -27,6 +28,7 @@ public class GameUI
      *
      * The main windown on which other gui can be rendered.
      */
+
     public void createWindow() 
     {
         // main parent window
@@ -71,6 +73,7 @@ public class GameUI
         // parentComp, object, title, optionType
         JOptionPane.showConfirmDialog(
                 frame, reply, GAME_TITLE, 2);
+
     }
 
     /**
@@ -87,6 +90,24 @@ public class GameUI
         return (JOptionPane.showInternalConfirmDialog(
                     frame, question, GAME_TITLE, optionType));
 
+    /**
+     *
+     *
+     *
+     *
+     *
+     */
+    public String takeStringInput(
+        JFrame frame,
+        String question,
+        int optionType
+    ) {
+        return JOptionPane.showInputDialog(
+            frame,
+            question,
+            GAME_TITLE,
+            optionType
+        );
     }
 
     /**
