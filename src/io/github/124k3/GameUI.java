@@ -11,11 +11,14 @@ import javax.swing.JOptionPane;
  * @author 124k3
  *
  */
-public class GameUI {
 
+public class GameUI 
+{
     private static String GAME_TITLE = "Gay Tester!";
 
-    public GameUI() {
+
+    public GameUI() 
+    {
         createWindow();
     }
 
@@ -25,7 +28,9 @@ public class GameUI {
      *
      * The main windown on which other gui can be rendered.
      */
-    public void createWindow() {
+
+    public void createWindow() 
+    {
         // main parent window
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -39,7 +44,8 @@ public class GameUI {
      * @param frame JFrame object
      *
      **/
-    private static void centerWindow(JFrame frame) {
+    private static void centerWindow(JFrame frame) 
+    {
         // get screen size
         Toolkit toolkit = Toolkit.getDefaultToolkit();
         Dimension screenDimension = toolkit.getScreenSize();
@@ -62,30 +68,27 @@ public class GameUI {
      * @param frame the parent window on which to render the frame.
      *
      **/
-    public void setGameReply(String reply, JFrame frame) {
+    public void setGameReply(String reply, JFrame frame) 
+    {
         // parentComp, object, title, optionType
-        JOptionPane.showConfirmDialog(frame, reply, GAME_TITLE, 2);
+        JOptionPane.showConfirmDialog(
+                frame, reply, GAME_TITLE, 2);
+
     }
 
     /**
      * The question(s) to ask user.
      * @param question the question to be asked.
      * @param frame the parent window on to which the game renders.
-     * @param optionType {@code 1} - yes,no option buttons,
+     * @param optionType {@code 1} - yes,no option buttons, 
      * {@code 2} - yes, no, cancel option buttons avalable.
-     * @return index int value 1, 2 or 3. depending on the button clicked.
+     * @return index int value 1, 2 or 3. depending on the button clicked. 
      *
      **/
-    public int askQuestion(String question, JFrame frame, int optionType) {
-        return (
-            JOptionPane.showInternalConfirmDialog(
-                frame,
-                question,
-                GAME_TITLE,
-                optionType
-            )
-        );
-    }
+    public int askQuestion(String question, JFrame frame, int optionType)
+    {
+        return (JOptionPane.showInternalConfirmDialog(
+                    frame, question, GAME_TITLE, optionType));
 
     /**
      * presents an input box to obtain data (in the form)
@@ -109,6 +112,7 @@ public class GameUI {
     }
 
     /**
+<<<<<<< HEAD
      * provided a conformation dialog box with yes_no, 
      * yes_cancel, yes_no_cancel
      * buttons and a message for the user.
@@ -116,11 +120,28 @@ public class GameUI {
      * @param message the message string which the user sees.
      * @param optionType integer value which allows the selection of buttons.
      **/
-    public void printConformDialog(
-        JFrame frame,
-        String message,
-        int optionType
-    ) {
-        JOptionPane.showMessageDialog(frame, message, GAME_TITLE, optionType);
+=======
+     *
+     *
+     *
+     *
+     *
+     */
+    public String takeStringInput(
+            JFrame frame, String question, int optionType)
+    {
+        return JOptionPane.shwoInputDialog(
+                frame, question, GAME_TILE, optionType);
+
     }
+
+    /***/
+>>>>>>> origin/forUi
+    public void printConformDialog(
+            JFrame frame, String message, int optionType)
+    {
+        JOptionPane.shwoMessageDialog(
+                frame, message, GAME_TITLE, optionType);
+    }
+
 }
