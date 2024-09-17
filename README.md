@@ -10,7 +10,7 @@ This game is meant for entertainment purposes only and should not be taken serio
 
 ---
 ## Installation
-- ### Windows
+## `Windows`
 1. Ensure Java is installed.
 - Use `java --version` to verify. If the java isn't installed, download the [JRE]() (Java Runtime Environment) or [JDK]() (Java Developemnt Kit)
 2. Navigate to JAR file loaction.
